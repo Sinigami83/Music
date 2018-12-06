@@ -3,39 +3,38 @@
 //  Copyright © 2018 Latipov Nodir. All rights reserved.
 //
 
-#import "NPAllMusicTableViewController.h"
-#import "NPAllMusic.h"
+#import "NPNewPlaylistTableViewController.h"
 
-@interface NPAllMusicTableViewController ()
-@property (nonatomic, strong) NSArray *songs;
+@interface NPNewPlaylistTableViewController ()
+
 @end
 
-@implementation NPAllMusicTableViewController
+@implementation NPNewPlaylistTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NPAllMusic *songs = [[NPAllMusic alloc] init];
-    self.songs = [songs musics];
+    
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.songs.count;
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Music" forIndexPath:indexPath];
-    cell.textLabel.text = [self.songs objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
     
     return cell;
 }
+*/
 
 /*
 // Override to support conditional editing of the table view.

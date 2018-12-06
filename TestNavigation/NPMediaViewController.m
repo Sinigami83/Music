@@ -37,9 +37,9 @@
 {
     NSString *segue = [self.mediaLibrary objectAtIndex:indexPath.row];
     if ([segue isEqualToString:@"Songs"]) {
-        [self performSegueWithIdentifier:@"All music" sender:nil];
+        [self performSegueWithIdentifier:@"Songs" sender:nil];
     } else if ([segue isEqualToString:@"Playlists"]) {
-        [self performSegueWithIdentifier:@"Playlist" sender:nil];
+        [self performSegueWithIdentifier:@"Playlists" sender:nil];
     }
 }
 

@@ -4,7 +4,18 @@
 //
 
 #import "NPAllMusic.h"
+@interface NPAllMusic()
+
+@end
 
 @implementation NPAllMusic
+
+-(NSArray *)musics
+{
+    if (!_musics) {
+        _musics = @[ @"song1", @"song2", @"song3", @"song4" ];
+    }
+    return _musics;
+}
 
 @end

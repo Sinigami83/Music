@@ -53,7 +53,7 @@
                     <navigationItem key="navigationItem" id="wVq-8O-a1d"/>
                     <connections>
                         <outlet property="tableView" destination="GPF-Wc-ry4" id="Nx5-fr-a3Q"/>
-                        <segue destination="pim-MU-iNC" kind="show" identifier="Playlist" id="8GW-va-OfR"/>
+                        <segue destination="pim-MU-iNC" kind="show" identifier="Playlists" id="8GW-va-OfR"/>
                         <segue destination="JuQ-gJ-IU8" kind="show" identifier="Songs" id="WNs-3s-ebz"/>
                     </connections>
                 </viewController>
@@ -64,7 +64,7 @@
         <!--Songs-->
         <scene sceneID="aN4-5d-pdS">
             <objects>
-                <tableViewController title="Songs" id="JuQ-gJ-IU8" sceneMemberID="viewController">
+                <tableViewController title="Songs" id="JuQ-gJ-IU8" customClass="NPAllMusicTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VcZ-og-ed0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
         <!--Playlists-->
         <scene sceneID="zaN-PI-Ocy">
             <objects>
-                <tableViewController title="Playlists" id="pim-MU-iNC" customClass="NPPlaylistTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Playlists" id="pim-MU-iNC" customClass="NPAllPlaylistsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EoI-EL-hrh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
         <!--Playlist-->
         <scene sceneID="SDt-p9-ifm">
             <objects>
-                <tableViewController title="Playlist" id="aoc-Pr-EFX" sceneMemberID="viewController">
+                <tableViewController title="Playlist" id="aoc-Pr-EFX" customClass="NPPlaylistTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8ea-Hx-H4N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="4780" y="-558"/>
         </scene>
-        <!--View Controller-->
+        <!--New Playlist Table View Controller-->
         <scene sceneID="d4d-Iy-0jK">
             <objects>
-                <viewController id="g4Z-si-jij" sceneMemberID="viewController">
+                <viewController id="g4Z-si-jij" customClass="NPNewPlaylistTableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nv2-N4-93b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
