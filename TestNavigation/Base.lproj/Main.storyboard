@@ -157,9 +157,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfe-Dk-zy1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfe-Dk-zy1">
                                 <rect key="frame" x="16" y="172" width="343" height="495"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="bot-Mh-arr">
@@ -172,24 +171,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name playlist" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-o1-TVA">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name playlist" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-o1-TVA">
                                 <rect key="frame" x="16" y="97" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="86b-Ze-od5"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="cansel" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upd-7B-r1R">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="cansel" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upd-7B-r1R">
                                 <rect key="frame" x="16" y="31" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="06D-xb-SRY"/>
+                                </constraints>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="canselButtom" destination="g4Z-si-jij" eventType="touchUpInside" id="0EZ-uq-Cjt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQo-ac-Tdu">
-                                <rect key="frame" x="322" y="30" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQo-ac-Tdu">
+                                <rect key="frame" x="311" y="30" width="48" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneButtom:" destination="g4Z-si-jij" eventType="touchUpInside" id="zZV-EX-xuX"/>
@@ -197,6 +199,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EQo-ac-Tdu" firstAttribute="top" secondItem="NGu-hV-ccr" secondAttribute="top" constant="10" id="6qf-yz-MAm"/>
+                            <constraint firstItem="hfe-Dk-zy1" firstAttribute="leading" secondItem="NGu-hV-ccr" secondAttribute="leading" constant="16" id="CSx-LL-Wyk"/>
+                            <constraint firstItem="EQo-ac-Tdu" firstAttribute="height" secondItem="Upd-7B-r1R" secondAttribute="height" id="E2a-Xt-vw2"/>
+                            <constraint firstItem="Upd-7B-r1R" firstAttribute="leading" secondItem="NGu-hV-ccr" secondAttribute="leading" constant="16" id="PyQ-0s-hJW"/>
+                            <constraint firstItem="FIa-o1-TVA" firstAttribute="top" secondItem="Upd-7B-r1R" secondAttribute="bottom" constant="36" id="S0m-8J-2vO"/>
+                            <constraint firstItem="EQo-ac-Tdu" firstAttribute="width" secondItem="Upd-7B-r1R" secondAttribute="width" id="atE-Ac-6tY"/>
+                            <constraint firstItem="NGu-hV-ccr" firstAttribute="trailing" secondItem="FIa-o1-TVA" secondAttribute="trailing" constant="16" id="dFp-2Z-PDO"/>
+                            <constraint firstItem="NGu-hV-ccr" firstAttribute="trailing" secondItem="EQo-ac-Tdu" secondAttribute="trailing" constant="16" id="daT-ce-con"/>
+                            <constraint firstItem="NGu-hV-ccr" firstAttribute="trailing" secondItem="hfe-Dk-zy1" secondAttribute="trailing" constant="16" id="eOv-Y2-0le"/>
+                            <constraint firstItem="hfe-Dk-zy1" firstAttribute="top" secondItem="FIa-o1-TVA" secondAttribute="bottom" constant="45" id="iNi-8m-A6H"/>
+                            <constraint firstItem="EQo-ac-Tdu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Upd-7B-r1R" secondAttribute="trailing" constant="8" symbolic="YES" id="jCx-1E-gMe"/>
+                            <constraint firstItem="hfe-Dk-zy1" firstAttribute="bottom" secondItem="NGu-hV-ccr" secondAttribute="bottom" id="pzm-tc-urN"/>
+                            <constraint firstItem="FIa-o1-TVA" firstAttribute="leading" secondItem="NGu-hV-ccr" secondAttribute="leading" constant="16" id="rKn-OC-dAg"/>
+                            <constraint firstItem="Upd-7B-r1R" firstAttribute="top" secondItem="NGu-hV-ccr" secondAttribute="top" constant="11" id="rOQ-Wb-ktY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NGu-hV-ccr"/>
                     </view>
                 </viewController>
