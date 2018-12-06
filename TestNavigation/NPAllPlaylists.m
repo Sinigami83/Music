@@ -9,7 +9,7 @@
 - (NSArray *)playlists
 {
     if (!_playlists) {
-        _playlists = @[ @"playlists1", @"playlists2" ];
+        _playlists = @[ @"New playlist", @"playlists" ];
     }
     return _playlists;
 }

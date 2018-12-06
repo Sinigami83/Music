@@ -7,7 +7,6 @@
 #import "NPAllMusicTableViewController.h"
 
 @interface NPMediaViewController () <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *mediaLibrary;
 @end
 

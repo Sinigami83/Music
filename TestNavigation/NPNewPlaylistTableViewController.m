@@ -16,11 +16,20 @@
     
 }
 
-#pragma mark - Table view data source
+#pragma mark - Action
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+- (IBAction)canselButtom
+{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)doneButtom:(id)sender
+{
+
+}
+
+
+#pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 0;

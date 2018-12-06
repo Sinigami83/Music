@@ -5,7 +5,6 @@
 
 #import "NPAllMusic.h"
 @interface NPAllMusic()
-
 @end
 
 @implementation NPAllMusic
