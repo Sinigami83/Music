@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D50768E121B934C80033CDC8 /* NPAllMusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768E021B934C80033CDC8 /* NPAllMusicTableViewController.m */; };
 		D50768E421B935560033CDC8 /* NPAllMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768E321B935560033CDC8 /* NPAllMusic.m */; };
+		D50768E721B93E2A0033CDC8 /* NPPlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768E621B93E2A0033CDC8 /* NPPlaylistTableViewController.m */; };
 		D521B56E21B7D0CC00D0BE98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D521B56D21B7D0CC00D0BE98 /* AppDelegate.m */; };
 		D521B57121B7D0CC00D0BE98 /* NPMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D521B57021B7D0CC00D0BE98 /* NPMediaViewController.m */; };
 		D521B57421B7D0CC00D0BE98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D521B57221B7D0CC00D0BE98 /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 		D50768E021B934C80033CDC8 /* NPAllMusicTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPAllMusicTableViewController.m; sourceTree = "<group>"; };
 		D50768E221B935560033CDC8 /* NPAllMusic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPAllMusic.h; sourceTree = "<group>"; };
 		D50768E321B935560033CDC8 /* NPAllMusic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPAllMusic.m; sourceTree = "<group>"; };
+		D50768E521B93E2A0033CDC8 /* NPPlaylistTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPPlaylistTableViewController.h; sourceTree = "<group>"; };
+		D50768E621B93E2A0033CDC8 /* NPPlaylistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPPlaylistTableViewController.m; sourceTree = "<group>"; };
 		D521B56921B7D0CC00D0BE98 /* TestNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D521B56C21B7D0CC00D0BE98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D521B56D21B7D0CC00D0BE98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				D50768DF21B934C80033CDC8 /* NPAllMusicTableViewController.h */,
 				D50768E021B934C80033CDC8 /* NPAllMusicTableViewController.m */,
 				D521B57221B7D0CC00D0BE98 /* Main.storyboard */,
+				D50768E521B93E2A0033CDC8 /* NPPlaylistTableViewController.h */,
+				D50768E621B93E2A0033CDC8 /* NPPlaylistTableViewController.m */,
 				D50768E221B935560033CDC8 /* NPAllMusic.h */,
 				D50768E321B935560033CDC8 /* NPAllMusic.m */,
 				D521B57521B7D0CF00D0BE98 /* Assets.xcassets */,
@@ -156,6 +161,7 @@
 				D50768E121B934C80033CDC8 /* NPAllMusicTableViewController.m in Sources */,
 				D521B57C21B7D0CF00D0BE98 /* main.m in Sources */,
 				D521B56E21B7D0CC00D0BE98 /* AppDelegate.m in Sources */,
+				D50768E721B93E2A0033CDC8 /* NPPlaylistTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
