@@ -4,8 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "NPPlaylist.h"
 
 @interface NPAllPlaylists : NSObject
-@property (nonatomic, strong) NSArray *playlists;
+- (NSArray *)allplaylist;
+- (void)addPlaylist:(NPPlaylist *)playlist;
 @end

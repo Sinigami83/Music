@@ -4,7 +4,8 @@
 //
 
 #import "NPAllMusicTableViewController.h"
-#import "NPAllMusic.h"
+#import "NPAllMusics.h"
+#import "NPSong.h"
 
 @interface NPAllMusicTableViewController ()
 @property (nonatomic, strong) NSArray *songs;
@@ -14,8 +15,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NPAllMusic *songs = [[NPAllMusic alloc] init];
-    self.songs = [songs musics];
+    NPAllMusics *songs = [[NPAllMusics alloc] init];
+    self.songs = [songs allMusics];
 }
 
 #pragma mark - Table view data source
@@ -31,8 +32,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Music" forIndexPath:indexPath];
-    cell.textLabel.text = [self.songs objectAtIndex:indexPath.row];
-    
+    NPSong *song = self.songs[indexPath.row];
+    cell.textLabel.text = song.name;
     return cell;
 }
 

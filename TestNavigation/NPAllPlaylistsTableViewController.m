@@ -6,21 +6,23 @@
 
 #import "NPAllPlaylistsTableViewController.h"
 #import "NPAllPlaylists.h"
+#import "NPPlaylist.h"
+#import "NPNewPlaylistTableViewController.h"
 
-@interface NPAllPlaylistsTableViewController ()
-@property (nonatomic, strong) NSArray *playlists;
+@interface NPAllPlaylistsTableViewController () <NPNewPlaylistTableViewControllerDelegate>
+@property (nonatomic, strong) NSArray<NPPlaylist *> *playlists;
+@property (nonatomic, strong) NPAllPlaylists *lists;
 @end
 
 @implementation NPAllPlaylistsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NPAllPlaylists *lists = [[NPAllPlaylists alloc] init];
-    self.playlists = [lists playlists];
+    self.lists = [[NPAllPlaylists alloc] init];
+    self.playlists = [self.lists allplaylist];
 }
 
 #pragma mark - Table view data source
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.playlists.count;
@@ -28,7 +30,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell playlist" forIndexPath:indexPath];
-    cell.textLabel.text = self.playlists[indexPath.row];
+    NPPlaylist *playlist = self.playlists[indexPath.row];
+    cell.textLabel.text = [playlist name];
     return cell;
 }
 
@@ -39,6 +42,22 @@
         [self performSegueWithIdentifier:@"New playlist" sender:nil];
     } else {
         [self performSegueWithIdentifier:@"Selected playlist" sender:nil];
+    }
+}
+
+#pragma mark - NPNewPlaylistTableViewControllerDelegate
+- (void)viewController:(NPNewPlaylistTableViewController *)vc didSavePlaylist:(NPPlaylist *)playlist
+{
+    [self.lists addPlaylist:playlist];
+
+    [self.tableView reloadData];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"New playlist"]) {
+        NPNewPlaylistTableViewController *controller = segue.destinationViewController;
+        controller.delegate = self;
     }
 }
 

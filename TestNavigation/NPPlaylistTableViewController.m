@@ -4,26 +4,33 @@
 //
 
 #import "NPPlaylistTableViewController.h"
+#import "NPSong.h"
+
 
 @interface NPPlaylistTableViewController ()
-
+@property (nonatomic, strong) NSArray<NPSong *> *songs;
 @end
 
 @implementation NPPlaylistTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.songs count];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Selected playlist" forIndexPath:indexPath];
+    NPSong *song = self.songs[indexPath.row];
+    cell.textLabel.text = song.name;
+    return cell;
 }
 
 @end

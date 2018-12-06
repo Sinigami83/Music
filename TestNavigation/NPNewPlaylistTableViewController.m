@@ -4,8 +4,13 @@
 //
 
 #import "NPNewPlaylistTableViewController.h"
+#import "NPSong.h"
 
 @interface NPNewPlaylistTableViewController ()
+@property (nonatomic, weak) IBOutlet UITextField *namePlaylistTextField;
+@property (nonatomic, weak) IBOutlet UITableView *songsTableView;
+
+@property (nonatomic, strong) NSArray<NPSong *> *songs;
 
 @end
 
@@ -13,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.songs = @[];
 }
 
 #pragma mark - Action
@@ -25,7 +30,10 @@
 
 - (IBAction)doneButtom:(id)sender
 {
-
+    NPPlaylist *playlist = [[NPPlaylist alloc] initWithName:self.namePlaylistTextField.text
+                                                      songs:self.songs];
+    [self.delegate viewController:self didSavePlaylist:playlist];
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Table view data source

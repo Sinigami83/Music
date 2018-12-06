@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D50768E121B934C80033CDC8 /* NPAllMusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768E021B934C80033CDC8 /* NPAllMusicTableViewController.m */; };
-		D50768E421B935560033CDC8 /* NPAllMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768E321B935560033CDC8 /* NPAllMusic.m */; };
+		D50768E421B935560033CDC8 /* NPAllMusics.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768E321B935560033CDC8 /* NPAllMusics.m */; };
 		D50768E721B93E2A0033CDC8 /* NPPlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768E621B93E2A0033CDC8 /* NPPlaylistTableViewController.m */; };
 		D50768EA21B943DB0033CDC8 /* NPAllPlaylistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768E921B943DB0033CDC8 /* NPAllPlaylistsTableViewController.m */; };
 		D50768ED21B9440D0033CDC8 /* NPNewPlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768EC21B9440D0033CDC8 /* NPNewPlaylistTableViewController.m */; };
 		D50768F021B948630033CDC8 /* NPAllPlaylists.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768EF21B948630033CDC8 /* NPAllPlaylists.m */; };
+		D50768F321B967F00033CDC8 /* NPSong.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768F221B967F00033CDC8 /* NPSong.m */; };
+		D50768F621B974D80033CDC8 /* NPPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = D50768F521B974D80033CDC8 /* NPPlaylist.m */; };
 		D521B56E21B7D0CC00D0BE98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D521B56D21B7D0CC00D0BE98 /* AppDelegate.m */; };
 		D521B57121B7D0CC00D0BE98 /* NPMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D521B57021B7D0CC00D0BE98 /* NPMediaViewController.m */; };
 		D521B57421B7D0CC00D0BE98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D521B57221B7D0CC00D0BE98 /* Main.storyboard */; };
@@ -24,8 +26,8 @@
 /* Begin PBXFileReference section */
 		D50768DF21B934C80033CDC8 /* NPAllMusicTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPAllMusicTableViewController.h; sourceTree = "<group>"; };
 		D50768E021B934C80033CDC8 /* NPAllMusicTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPAllMusicTableViewController.m; sourceTree = "<group>"; };
-		D50768E221B935560033CDC8 /* NPAllMusic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPAllMusic.h; sourceTree = "<group>"; };
-		D50768E321B935560033CDC8 /* NPAllMusic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPAllMusic.m; sourceTree = "<group>"; };
+		D50768E221B935560033CDC8 /* NPAllMusics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPAllMusics.h; sourceTree = "<group>"; };
+		D50768E321B935560033CDC8 /* NPAllMusics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPAllMusics.m; sourceTree = "<group>"; };
 		D50768E521B93E2A0033CDC8 /* NPPlaylistTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPPlaylistTableViewController.h; sourceTree = "<group>"; };
 		D50768E621B93E2A0033CDC8 /* NPPlaylistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPPlaylistTableViewController.m; sourceTree = "<group>"; };
 		D50768E821B943DB0033CDC8 /* NPAllPlaylistsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPAllPlaylistsTableViewController.h; sourceTree = "<group>"; };
@@ -34,6 +36,10 @@
 		D50768EC21B9440D0033CDC8 /* NPNewPlaylistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPNewPlaylistTableViewController.m; sourceTree = "<group>"; };
 		D50768EE21B948630033CDC8 /* NPAllPlaylists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPAllPlaylists.h; sourceTree = "<group>"; };
 		D50768EF21B948630033CDC8 /* NPAllPlaylists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPAllPlaylists.m; sourceTree = "<group>"; };
+		D50768F121B967F00033CDC8 /* NPSong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPSong.h; sourceTree = "<group>"; };
+		D50768F221B967F00033CDC8 /* NPSong.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPSong.m; sourceTree = "<group>"; };
+		D50768F421B974D80033CDC8 /* NPPlaylist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPPlaylist.h; sourceTree = "<group>"; };
+		D50768F521B974D80033CDC8 /* NPPlaylist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPPlaylist.m; sourceTree = "<group>"; };
 		D521B56921B7D0CC00D0BE98 /* TestNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D521B56C21B7D0CC00D0BE98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D521B56D21B7D0CC00D0BE98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,10 +95,14 @@
 				D50768EB21B9440D0033CDC8 /* NPNewPlaylistTableViewController.h */,
 				D50768EC21B9440D0033CDC8 /* NPNewPlaylistTableViewController.m */,
 				D521B57221B7D0CC00D0BE98 /* Main.storyboard */,
-				D50768E221B935560033CDC8 /* NPAllMusic.h */,
-				D50768E321B935560033CDC8 /* NPAllMusic.m */,
+				D50768E221B935560033CDC8 /* NPAllMusics.h */,
+				D50768E321B935560033CDC8 /* NPAllMusics.m */,
+				D50768F121B967F00033CDC8 /* NPSong.h */,
+				D50768F221B967F00033CDC8 /* NPSong.m */,
 				D50768EE21B948630033CDC8 /* NPAllPlaylists.h */,
 				D50768EF21B948630033CDC8 /* NPAllPlaylists.m */,
+				D50768F421B974D80033CDC8 /* NPPlaylist.h */,
+				D50768F521B974D80033CDC8 /* NPPlaylist.m */,
 				D521B57521B7D0CF00D0BE98 /* Assets.xcassets */,
 				D521B57721B7D0CF00D0BE98 /* LaunchScreen.storyboard */,
 				D521B57A21B7D0CF00D0BE98 /* Info.plist */,
@@ -171,14 +181,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50768F321B967F00033CDC8 /* NPSong.m in Sources */,
 				D521B57121B7D0CC00D0BE98 /* NPMediaViewController.m in Sources */,
 				D50768EA21B943DB0033CDC8 /* NPAllPlaylistsTableViewController.m in Sources */,
-				D50768E421B935560033CDC8 /* NPAllMusic.m in Sources */,
+				D50768E421B935560033CDC8 /* NPAllMusics.m in Sources */,
 				D50768E121B934C80033CDC8 /* NPAllMusicTableViewController.m in Sources */,
 				D521B57C21B7D0CF00D0BE98 /* main.m in Sources */,
 				D521B56E21B7D0CC00D0BE98 /* AppDelegate.m in Sources */,
 				D50768ED21B9440D0033CDC8 /* NPNewPlaylistTableViewController.m in Sources */,
 				D50768F021B948630033CDC8 /* NPAllPlaylists.m in Sources */,
+				D50768F621B974D80033CDC8 /* NPPlaylist.m in Sources */,
 				D50768E721B93E2A0033CDC8 /* NPPlaylistTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -217,6 +217,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NGu-hV-ccr"/>
                     </view>
+                    <connections>
+                        <outlet property="namePlaylistTextField" destination="FIa-o1-TVA" id="aZq-xr-p9r"/>
+                        <outlet property="songsTableView" destination="hfe-Dk-zy1" id="4jp-5A-KFu"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="4780" y="-1281.4092953523239"/>
