@@ -5,6 +5,9 @@
 
 #import "NPMediaViewController.h"
 #import "NPAllMusicTableViewController.h"
+#import "NPAllPlaylistsTableViewController.h"
+#import "NPPlaylist.h"
+#import "NPAllPlaylists.h"
 
 @interface NPMediaViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSArray *mediaLibrary;
@@ -15,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.mediaLibrary = @[ @"Songs", @"Playlists" ];
+
 }
 
 #pragma mark - UITableViewDataSource
@@ -39,6 +43,15 @@
         [self performSegueWithIdentifier:@"Songs" sender:nil];
     } else if ([segue isEqualToString:@"Playlists"]) {
         [self performSegueWithIdentifier:@"Playlists" sender:nil];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Playlists"]) {
+        NPAllPlaylistsTableViewController *controller = segue.destinationViewController;
+        NPAllPlaylists *lists = [[NPAllPlaylists alloc] init];
+        controller.playlists = [lists allplaylist];
     }
 }
 

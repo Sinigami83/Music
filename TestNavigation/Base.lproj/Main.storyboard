@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GPF-Wc-ry4">
-                                <rect key="frame" x="16" y="64" width="343" height="225"/>
+                                <rect key="frame" x="16" y="64" width="343" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -38,13 +38,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="M5t-Cp-Om4"/>
                                 </connections>
                             </tableView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s5M-2S-Udc">
-                                <rect key="frame" x="16" y="389" width="343" height="229"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="vj2-5f-Iyt" kind="embed" identifier="Added recently" id="Ro1-VO-Jjo"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -261,20 +254,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsZ-uP-nc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="984.79999999999995" y="133.5832083958021"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="YDo-gL-Taa">
-            <objects>
-                <viewController id="vj2-5f-Iyt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9X8-VM-172">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="229"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iCq-ZG-3IR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3836" y="718"/>
         </scene>
         <!--For you-->
         <scene sceneID="ntP-0k-ks3">

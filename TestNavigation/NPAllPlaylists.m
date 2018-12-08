@@ -9,7 +9,7 @@
 #import "NPNewPlaylistTableViewController.h"
 
 
-@interface NPAllPlaylists()
+@interface NPAllPlaylists() <NPNewPlaylistTableViewControllerDelegate>
 @property (nonatomic, strong) NSArray<NPPlaylist *> *playlists;
 @end
 
@@ -32,6 +32,20 @@
     NSMutableArray *playlists = [self.playlists mutableCopy];
     [playlists addObject:playlist];
     self.playlists = playlists;
+}
+
+#pragma mark - NPNewPlaylistTableViewControllerDelegate
+- (void)viewController:(NPNewPlaylistTableViewController *)vc didSavePlaylist:(NPPlaylist *)playlist
+{
+    [self addPlaylist:playlist];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"New playlist"]) {
+        NPNewPlaylistTableViewController *controller = segue.destinationViewController;
+        controller.delegate = self;
+    }
 }
 
 @end

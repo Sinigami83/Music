@@ -10,16 +10,14 @@
 #import "NPNewPlaylistTableViewController.h"
 
 @interface NPAllPlaylistsTableViewController () <NPNewPlaylistTableViewControllerDelegate>
-@property (nonatomic, strong) NSArray<NPPlaylist *> *playlists;
-@property (nonatomic, strong) NPAllPlaylists *lists;
 @end
 
 @implementation NPAllPlaylistsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.lists = [[NPAllPlaylists alloc] init];
-    self.playlists = [self.lists allplaylist];
+    //NPAllPlaylists *lists = [[NPAllPlaylists alloc] init];
+    //self.playlists = [lists allplaylist];
 }
 
 #pragma mark - Table view data source
@@ -48,7 +46,9 @@
 #pragma mark - NPNewPlaylistTableViewControllerDelegate
 - (void)viewController:(NPNewPlaylistTableViewController *)vc didSavePlaylist:(NPPlaylist *)playlist
 {
-    [self.lists addPlaylist:playlist];
+    NSMutableArray *playlists = [self.playlists mutableCopy];
+    [playlists addObject:playlist];
+    self.playlists = playlists;
 
     [self.tableView reloadData];
 }
