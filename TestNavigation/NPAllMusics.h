@@ -6,6 +6,6 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NPAllMusic : NSObject
-
+@interface NPAllMusics : NSObject
+- (NSArray *)allMusics;
 @end

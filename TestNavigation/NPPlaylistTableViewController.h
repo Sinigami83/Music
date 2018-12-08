@@ -3,8 +3,9 @@
 //  Copyright © 2018 Latipov Nodir. All rights reserved.
 //
 
-#import "NPAllMusic.h"
+#import <UIKit/UIKit.h>
 
-@implementation NPAllMusic
+
+@interface NPPlaylistTableViewController : UITableViewController
 
 @end
